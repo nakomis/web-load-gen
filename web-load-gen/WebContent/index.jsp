@@ -10,13 +10,10 @@
 		hosts = cfg.getHosts();
 		load = "" + cfg.getLoad();
 	} else {
-		db = "couchbase2";
-		hosts = System.getProperty("brooklyn.example.couchbase.nodes");
-		if(hosts == null) {
-	hosts = "";
-		} else {
-	hosts = LauncherServlet.stripHosts(hosts);
-		}
+		db = System.getProperty("load_gen.db", "couchbase2");
+		hosts = LauncherServlet.stripHosts(
+					System.getProperty("load_gen.hosts",
+						System.getProperty("brooklyn.example.couchbase.nodes", "")));
 		load = "10000";
 	}
 %><!doctype html>
