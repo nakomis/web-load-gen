@@ -19,7 +19,7 @@
 %><!doctype html>
 <html>
 	<head>
-		<title>Couchbase stress test demo</title>
+		<title>Load Generator Demo</title>
 		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">		
 		<script type="text/javascript" src="lib/jquery-1.11.1.js"></script>
 		<script type="text/javascript" src="lib/amcharts/amcharts.js"></script>
